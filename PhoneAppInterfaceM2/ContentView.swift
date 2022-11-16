@@ -9,18 +9,46 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
+        
+        
+        
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            HStack(spacing: 27.0) {
+                
+                Text("Delivery")
+                    .foregroundColor(.orange)
+                    .font(.title2)
+                    .bold()
+                Text("Pickup")
+                    .foregroundColor(.gray)
+                    .font(.title2)
+                    .bold()
+                
+            }
+            
+            Text("123 Cres Street")
+                .bold()
+                .font(.title)
+            
+            
         }
-        .padding()
+        
+        
     }
-}
+        
+        
+        
+        
+        struct ContentView_Previews: PreviewProvider {
+            static var previews: some View {
+                ContentView()
+            }
+        }
+        
+        
+    
+    
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+    
 }
